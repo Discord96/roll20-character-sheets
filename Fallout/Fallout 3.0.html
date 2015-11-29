@@ -114,8 +114,8 @@
             <td>Action Points</td>
             <td><input type="number" class="sheet-number" name="attr_actionpoints" value='@{mod-actionpoints} + @{base-actionpoints}' disabled="true"/></td>
             <td><input type="number" class="sheet-number" name="attr_mod-actionpoints" value="0" /></td>
-            <td><input type="number" class="sheet-number" name="attr_base-actionpoints" value='floor(@{agility}/2)' disabled="true" /></td>
-            <td><input type="text"   class="sheet-number" name="attr_basetext-actionpoints" value="5 + (AG/2, round down)" readonly /></td>
+            <td><input type="number" class="sheet-number" name="attr_base-actionpoints" value='5+(@{agility}/2)' disabled="true" /></td>
+            <td><input type="text"   class="sheet-number" name="attr_basetext-actionpoints" value="5 + (1/2 AG, round down)" readonly /></td>
         </tr>
         <tr>
             <td>Carry Weight</td>
